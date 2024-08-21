@@ -1,6 +1,6 @@
 package Ejemplo3;
 // PruebaTiempo1.java
-// Clase PruebaTiempo1 que utiliza la clase Tiempo1.
+// Clase PruebaTiempo1 que utiliza la clase Tiempo1111111111111111111111.
 import javax.swing.JOptionPane;
 public class PruebaTiempo1 {
     public static void main( String args[] ){
