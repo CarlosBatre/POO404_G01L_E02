@@ -21,7 +21,13 @@ public class CajeroElectronico {
                 System.out.println("BIENVENIDO A LA BANCAELECTRONICA :D");
                 break;
             }
+            if (!cuentaEncontrada) {
+                System.out.println("Número de cuenta no encontrado. Intentarlo mas tarde!.");
+                System.exit(1);
+            }
         }
-        System.out.println("Número de cuenta no encontrado. Intentarlo mas tarde.");
+
+
+
     }
 }
