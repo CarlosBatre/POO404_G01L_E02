@@ -28,7 +28,6 @@ public class CajeroElectronico {
         for (int[] cuenta : cuentas) {
             if (cuenta[0] == numCuenta) {
                 saldo = cuenta[1];
-                //clear
                 System.out.println("BIENVENIDO A LA BANCA ELECTRÓNICA :D");
                 break;
             }
@@ -49,7 +48,6 @@ public class CajeroElectronico {
             System.out.println("4. Transferencias");
             System.out.println("5. Salir");
             int opcion = 0;
-
             try {
                 System.out.print("\nOpción: ");
                 opcion = scanner.nextInt();
@@ -119,12 +117,10 @@ public class CajeroElectronico {
                         System.out.println("Opción no válida. Inténtelo de nuevo.");
                         break;
                 }
-
             }   catch (Exception e) {
                 System.out.println("Ingrese un número 1-5. Intentarlo de nuevo :).");
                 scanner.nextLine();
-            }
+           }
         }
-
     }
 }
