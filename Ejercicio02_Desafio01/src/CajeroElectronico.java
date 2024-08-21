@@ -56,7 +56,34 @@ public class CajeroElectronico {
                 System.out.println("Muchas Gracias por usar nuestros servicios. ¡Hasta luego!ඞ");
                 break;
             }
+            //procedimientos del menu banca
+            switch (opcion){
+                //consulta saldo
+                case 1:
+                    System.out.println("\nSaldo actual de la cuenta #" + numCuenta + " es de $" + saldo);
+                    break;
+                //retiro de fondos
+                case 2:
+                    try {
+                        System.out.print("\nIngrese la cantidad a retirar: ");
+                        int retiro = scanner.nextInt();
+                        if (retiro <= saldo) {
+                            saldo -= retiro;
+                            System.out.println("Retiro exitoso. Su saldo actual es: $" + saldo);
+                        } else {
+                            System.out.println("Lo siento....fondos insuficientes :(.");
+                        }
+                    } catch (Exception e) {
+                        System.out.println("Ingrese una cantidad valida");
+                        scanner.nextLine();
+                    }
+                    break;
 
+
+                default:
+                    System.out.println("Opción no válida. Inténtelo de nuevo.");
+                    break;
+            }
         }
 
     }
