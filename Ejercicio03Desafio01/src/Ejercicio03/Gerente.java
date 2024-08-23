@@ -1,5 +1,4 @@
 package Ejercicio03;
-
 class Gerente extends Empleado {
     private double bono;
 
@@ -7,7 +6,6 @@ class Gerente extends Empleado {
         super(nombre, salarioBase);
         this.bono = bono;
     }
-
     @Override
     public double calcularSalario() {
         return salarioBase + bono;

@@ -7,12 +7,10 @@ class Desarrollador extends Empleado {
         super(nombre, salarioBase);
         this.extraHoras = extraHoras;
     }
-
     @Override
     public double calcularSalario() {
         return salarioBase + extraHoras * 20; // Ejemplo: pago de $20 por hora extra
     }
-
     @Override
     public void mostrarInfo() {
         System.out.println("Nombre: " + nombre + " (Desarrollador)");
