@@ -1,14 +1,20 @@
 package Ejercicio03;
 
-public class Empleado {
-    String Nombre;
-    Double SalarioBase;
-    /*Generar constructor para nombre*/
-    public Empleado(String nombre) {
-        Nombre = nombre;
+abstract class Empleado {
+    protected String nombre;
+    protected double salarioBase;
+
+    public Empleado(String nombre, double salarioBase) {
+        this.nombre = nombre;
+        this.salarioBase = salarioBase;
     }
-    /*Generar constructor para salario base*/
-    public Empleado(Double salarioBase) {
-        SalarioBase = salarioBase;
+
+    public abstract double calcularSalario();
+
+    public void mostrarInfo() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Salario Base: $" + salarioBase);
+        System.out.println("Salario Total: $" + calcularSalario());
     }
+
 }
