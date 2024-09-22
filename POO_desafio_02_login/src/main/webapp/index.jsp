@@ -1,13 +1,30 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
+<%--
+  Created by IntelliJ IDEA.
+  User: rojas
+  Date: 2/9/2024
+  Time: 14:08
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Suma de dos numeros.</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<form name="sumaForm" action="sumaServlet" method="POST">
+  <table>
+    <tr>
+      <td>Primer numero :</td>
+      <td><input type="text" name="num_1"/></td>
+    </tr>
+    <tr>
+      <td>Segundo numero :</td>
+      <td><input type="text" name="num_2"/></td>
+    </tr>
+    <th><input type="submit" value="calcular" name="calculate"/></th>
+    <th><input type="reset" value="reiniciar" name="reset"/></th>
+  </table>
+  <h2>${respuesta}</h2>
+</form>
 </body>
 </html>
